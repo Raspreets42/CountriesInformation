@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body{
+    padding: 0;
+    margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar{
+    border-radius: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand{
+    margin-left: 60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#refreshing{
+    margin-right: 60px;
 }
-
-.App-link {
-  color: #61dafb;
+.fa-snowflake{
+    animation: ghum 2s linear infinite;
+    color: rgb(75, 75, 240);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes ghum{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#carding{
+    width: 17rem;
+    height: 480px;
+    margin: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 217, 217);
+}
+.card-body{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.details{
+    background-color: rgb(219, 217, 217);
+}
+#mainSpan{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.spans{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#flaging{
+    width: 120px;
+    height: 60px;
+}
+#foot{
+    margin-top: 20px;
+}
+@media (min-width: 250px) and (max-width:359px) {
+    #mainHeading{
+        font-size: 22px;
+    }
+    #carding{
+        width: 15rem;
+        height: 480px;
+        margin: 10px;
+        padding: 5px;
+    }    
+    #mainSpan{
+        font-size: 20px;
+    }
+    .spans{
+        font-size: 16px;
+    }
+    #flaging{
+        width: 100px;
+        height: 50px;
+    }
+    .navbar-brand{
+        margin-left: 10px;
+    }
+    #refreshing{
+        margin-right: 10px;
+    }
+    .navbar{
+        border-radius: 5px;
+    }
 }
